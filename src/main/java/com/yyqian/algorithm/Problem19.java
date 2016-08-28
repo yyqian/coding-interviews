@@ -6,4 +6,14 @@ package com.yyqian.algorithm;
  * @author Yinyin Qian
  */
 public class Problem19 {
+  public static void mirror(TreeNode<Integer> root) {
+    if (root == null) {
+      return;
+    }
+    TreeNode<Integer> temp = root.left;
+    root.left = root.right;
+    root.right = temp;
+    mirror(root.left);
+    mirror(root.right);
+  }
 }
