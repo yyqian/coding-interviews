@@ -2,8 +2,6 @@ package com.yyqian.algorithm;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * Created on 9/12/16.
@@ -46,8 +44,7 @@ public class Problem50 {
     return result;
   }
 
-  private static <T> boolean findPath(
-      TreeNode<T> root, TreeNode<T> node, Deque<TreeNode<T>> path, Deque<TreeNode<T>> result) {
+  private static <T> boolean findPath(TreeNode<T> root, TreeNode<T> node, Deque<TreeNode<T>> path, Deque<TreeNode<T>> result) {
     if (root == null) {
       return false;
     }

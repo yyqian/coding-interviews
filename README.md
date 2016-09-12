@@ -1,1 +1,3 @@
-# coding-interviews
+# 「剑指Offer」习题解（Java）
+
+包含了 1- 50 题中的大多数解法（除了少数测试 C++ 技能的或不适用于 Java 的）
