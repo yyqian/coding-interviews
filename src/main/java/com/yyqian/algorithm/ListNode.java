@@ -13,4 +13,8 @@ public class ListNode<T> {
     this.val = val;
     this.next = next;
   }
+
+  public ListNode(T val) {
+    this(val, null);
+  }
 }

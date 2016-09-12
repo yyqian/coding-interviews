@@ -15,4 +15,8 @@ public class TreeNode<T> {
     this.left = left;
     this.right = right;
   }
+
+  public TreeNode(T val) {
+    this(val, null, null);
+  }
 }
