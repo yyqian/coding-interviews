@@ -16,11 +16,15 @@ public class Problem51 {
         if (nums[i] == nums[j]) {
           return nums[i];
         }
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
+        swap(nums, i, j);
       }
     }
     return -1;
+  }
+
+  private static void swap(int[] nums, int i, int j) {
+    int temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
   }
 }
